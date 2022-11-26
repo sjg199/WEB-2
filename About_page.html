@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1st Web Page</title>
+    <meta charset = "utf-8">
+    
+    <style>
+
+.blinking{
+  -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+  -moz-animation:blink 1.5s ease-in-out infinite alternate;
+  animation:blink 1.5s ease-in-out infinite alternate;
+  float: left;
+  text-align: center;
+  
+  color : red;
+  background-color: cyan;
+  font-size: 40px;
+}
+@-webkit-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+      div.box:nth-child(2n+1){
+        background-color: rgb(116, 72, 8);
+      }
+      div.box:nth-child(2n){
+        background-color: rgb(235, 150, 23);
+      }
+      .top_right img{
+        display: block;
+      }
+
+      .box_left img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      #top{      
+        width: 1000px;
+        height: 500px;
+      }
+
+      .top_left{
+        position: relative;
+        float: left;
+        width: 750px;
+        height: 500px;
+      }
+      .top_right{
+        
+        float: left;
+        width: 250px;
+        height: 500px;
+      }
+
+
+      #box_all{
+        width: 1000px;
+      }
+
+      .box_left{
+        float: left;
+        width: 750px;
+        height: 500px;
+      }
+
+      .box_right{
+        display: flex;
+      align-items: center;
+        background-color: yellow;
+        float: left;
+        width: 250px;
+        height: 500px;
+      }
+ 
+
+      .box{
+        font-weight: bold;
+        float: left;
+        width: 250px;
+        height: 250px;
+      }
+
+      .bottom-left {
+        background-color: rgba(143, 240, 143, 0.719);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left:0;
+        bottom: 0;
+        text-align: left;
+       
+      
+}
+      #footer{
+        width: 1000px;
+      }
+      #footer ul{
+        list-style-type: none;
+      }
+      #footer ul li{
+        padding : 0px 10px 0px 10px;
+        border-right: 2px solid #f3a20b;
+        display: inline;
+      }
+      #footer ul li:last-child{
+        border-right: none;
+      }
+      .f_left{
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        background-color: gray;
+        float: left;
+        width: 750px;
+        height: 40px;
+      }
+
+
+      .f_right{
+        background-color: pink;
+        float: left;
+        width: 250px;
+        height: 40px;
+      }
+      </style>
+
+    </head>
+
+
+    <body>
+      <div id="top">
+        <div class="top_left">
+          <img src = "chef_about.png">
+          <div class="bottom-left">
+            <p><b>&nbspGlobal<br>&nbspBusiness</b></p>
+            <p><b>&nbspGlobal&nbspBusiness</b></p>
+            <p><b>&nbspGlobal&nbspBusiness</b></p>
+          </div>
+        </div>
+
+        <div class="top_right">
+          <img src = "right1.png">
+          <img src = "right2.png">
+          
+        </div>
+      </div>
+
+      <div id="box_all">
+        <div class = "box_left">
+          
+          <div class="box">
+            <p>&nbspChicken</p>
+            <img src = "Chicken.jpg">
+          </div>
+          <div class="box">
+            <p>&nbspPizza</p>
+            <img src = "Pizza.jpg">
+          </div>
+          <div class="box">
+            <p>&nbspHamburger</p>
+            <img src = "Hamburger.jpg">
+          </div>
+          <div class="box">
+            <p>&nbspSushi</p>
+            <img src = "Sushi.jpg">
+          </div>
+          <div class="box">
+            <p>&nbspSoup</p>
+            <img src = "Soup.jpg">
+          </div>
+          <div class="box">
+            <p>&nbspSalad</p>
+            <img src = "Salad.jpg">
+          </div>
+        </div>
+
+        <div class = "box_right">
+          <span class="image blinking"> <strong> &nbspDiscount event in progress &nbsp(~2023.11)</strong> </span>
+        </div>
+       
+      </div>
+
+      <div id="footer">
+        <div class="f_left">
+         <ul>
+          <li>법적고지</li>
+          <li>이메일무단수집거부</li>
+          <li>이용약관</li>
+          <li>개인정보취급방침</li>
+          <li>고객센터</li>
+          <li>입찰공고</li>
+         </ul>
+        </div>
+
+        <div class="f_right">
+
+        </div>
+      </div>
+          
+      </div>
+      
+    </body>
+ </html>
